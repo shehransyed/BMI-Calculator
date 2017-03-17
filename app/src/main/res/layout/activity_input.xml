@@ -18,19 +18,29 @@
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(cm)"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_above="@+id/heightInput"
+        android:layout_toEndOf="@+id/weightText" />
+
     <EditText
         android:id="@+id/heightInput"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_below="@+id/heightText"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
         android:height="50dp"
         android:background="#f2f3f4"
         android:ems="10"
         android:inputType="numberDecimal"
         android:textColor="#000080"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_below="@+id/heightText"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/weightText"
@@ -42,6 +52,15 @@
         android:text="Weight"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(kg)"
+        android:textSize="18sp"
+        android:layout_above="@+id/weightInput"
+        android:layout_alignEnd="@+id/textView" />
 
     <EditText
         android:id="@+id/weightInput"
@@ -71,24 +90,5 @@
         android:text="Calculate"
         android:textColor="@android:color/white"
         android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(cm)"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:layout_above="@+id/heightInput"
-        android:layout_toEndOf="@+id/weightText" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(kg)"
-        android:textSize="18sp"
-        android:layout_above="@+id/weightInput"
-        android:layout_alignEnd="@+id/textView" />
 
 </RelativeLayout>

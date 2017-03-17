@@ -38,7 +38,7 @@ public class Input extends AppCompatActivity {
             finish();
 
         } catch (NumberFormatException e) {
-            Toast toast = Toast.makeText(getApplicationContext(), "Oops! You can only enter numbers. Try again.", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(getApplicationContext(), "Oops! Please try again.", Toast.LENGTH_SHORT);
             toast.show();
             height.setText("");
             weight.setText("");
